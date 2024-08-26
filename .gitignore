@@ -1,2 +1,51 @@
-node_modules
+# Node.js dependencies
+node_modules/
+
+# Environment variable files
+.env
+.env.local
+.env.*.local
+
+# Build output directories
+dist/
+build/
+out/
+
+# Logs
+logs/
+*.log
+
+# Dependency directories (for example, when using Yarn or pnpm)
+.yarn/
+.pnp/
+.pnp.js
+
+# IDE/editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+
+# Yarn and npm lock files (optional)
 package-lock.json
+yarn.lock
+
+# Vite specific
+.vite/
+*.local
+
+# Miscellaneous
+*.tgz
+*.gz
