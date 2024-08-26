@@ -16,8 +16,8 @@ p {
   background-color: #1f2937;
   color: #10b981;
   width: 550px;
-  height: 550px;
-  padding: 115px 52px 0;
+  /* height: 550px; */
+  padding: 115px 52px;
   box-sizing: border-box;
 }
 
@@ -42,7 +42,15 @@ p {
   margin: 0 0 51px 0;
 }
 
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
 .btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;

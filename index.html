@@ -12,6 +12,38 @@
 
               <p class="remainder">Never use an insecure password again.</p>
 
+              <fieldset class="inputs-container">
+                <legend>Choose your password's features:</legend>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="symbols"
+                    name="symbols"
+                  />
+                  <label for="symbols">Symbols in password</label>
+                </div>
+              
+                <div>
+                  <input
+                    type="checkbox"
+                    id="numbers"
+                    name="numbers"
+                  />
+                  <label for="numbers">Numbers in password</label>
+                </div>
+
+                <div>
+                  <input
+                    type="number"
+                    id="passwordLength"
+                    name="number"
+                    min="8"
+                    max="20"
+                  />
+                  <label for="numbers">Passwords length (8 - 20)</label>
+                </div>
+              </fieldset>
+
               <button class="btn" onclick="generatePasswords()">Generate passwords</button>
             </div>
 
