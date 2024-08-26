@@ -5,10 +5,15 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src"
   },
   "dependencies": {
     "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
+    "eslint-plugin-react": "^7.30.1"
+  }
 }
