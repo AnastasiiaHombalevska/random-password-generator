@@ -7,6 +7,10 @@ body {
   background-color: #000;
 }
 
+p {
+  margin: 0;
+}
+
 .container {
   margin: 64px auto;
   background-color: #1f2937;
@@ -54,10 +58,20 @@ body {
   justify-content: space-between;
   padding-top: 35px;
 }
+
 .results {
   width: 211px;
   height: 39px;
   background-color: #273549;
-  color: #10b981;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #55f991;
   border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.result {
+  padding: 4px 0;
+  text-align: center;
 }
