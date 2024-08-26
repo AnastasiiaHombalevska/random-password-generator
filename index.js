@@ -48,6 +48,15 @@ function generatePasswords() {
   secondParol.textContent = secondPassword;
 }
 
+function resetParams() {
+  digits = false;
+  symbols = false;
+  PASSWORD_LENGTH = 8;
+
+  inputSymbols.checked = false;
+  inputNumbers.checked = false;
+  inputLength.value = '';
+}
 
 function getRandomChar(arr) {
   return Math.floor(Math.random() * arr.length);
