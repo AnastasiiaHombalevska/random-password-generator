@@ -1,9 +1,12 @@
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
   "/"];
 
-  const inputSymbols = document.getElementById('symbols');
-  const inputNumbers = document.getElementById('numbers');
-  const inputLength = document.getElementById('passwordLength');
+const inputSymbols = document.getElementById('symbols');
+const inputNumbers = document.getElementById('numbers');
+const inputLength = document.getElementById('passwordLength');
+
+const generateBtn = document.getElementById('generate-btn');
+const resetBtn = document.getElementById('reset-btn');
 
 let digits = false;
 let symbols = false;
@@ -21,7 +24,7 @@ inputLength.addEventListener('change', (e) => {
   PASSWORD_LENGTH = Number(e.target.value) || 8;
 });
 
-function generatePasswords() {
+generateBtn.addEventListener('click', function() {
   let firstPassword = '';
   let secondPassword = '';
   const firstParol = document.getElementById('first-parol');
@@ -46,9 +49,9 @@ function generatePasswords() {
 
   firstParol.textContent = firstPassword;
   secondParol.textContent = secondPassword;
-}
+})
 
-function resetParams() {
+resetBtn.addEventListener('click', function() {
   digits = false;
   symbols = false;
   PASSWORD_LENGTH = 8;
@@ -56,7 +59,7 @@ function resetParams() {
   inputSymbols.checked = false;
   inputNumbers.checked = false;
   inputLength.value = '';
-}
+})
 
 function getRandomChar(arr) {
   return Math.floor(Math.random() * arr.length);
