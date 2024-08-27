@@ -1,9 +1,8 @@
 body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
   margin: 0;
-  font-family: "Karla", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
   background-color: #000;
 }
 
@@ -14,7 +13,6 @@ h1 {
 
 @media (min-width: 320px) {
   .container {
-    font-size: 14px;
     width: 320px;
     background-color: #1f2937;
     color: #10b981;
@@ -24,7 +22,8 @@ h1 {
   }
 
   .title {
-    font-weight: 500;
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 18px;
@@ -58,10 +57,8 @@ h1 {
   }
 
   .btn {
+    width: 49%;
     font-family: inherit;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
     color: #fff;
     padding: 3px 6px;
     background-color: #10b981;
@@ -76,21 +73,19 @@ h1 {
   }
 
   .results {
-    width: 100%;
-    height: 39px;
+    min-height: 39px;
     background-color: #273549;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 32px;
     text-align: center;
     color: #55f991;
+    padding: 4px 6px;
     border-radius: 6px;
-    padding: 3px 6px;
     box-sizing: border-box;
   }
 
   .results {
     width: 49%;
+    word-wrap: break-word;
   }
 }
 
@@ -115,10 +110,8 @@ h1 {
   }
 
   .btn {
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 32px;
   }
 
   .results-container {
@@ -127,8 +120,6 @@ h1 {
 
   .results {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 32px;
   }
 }
 
@@ -150,7 +141,7 @@ h1 {
   }
 
   .btn {
-    padding: 9px 16px;
+    padding: 8px 16px;
     line-height: 24px;
   }
   
@@ -161,7 +152,7 @@ h1 {
   }
   
   .result {
-    padding: 4px 0;
+    padding: 3px 0;
     text-align: center;
   }
 }
