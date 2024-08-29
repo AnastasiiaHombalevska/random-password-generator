@@ -1,8 +1,12 @@
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-color: #000;
 }
 
@@ -158,6 +162,10 @@ h1 {
 }
 
 @media (min-width: 980px) {
+  body {
+    margin: 64px auto;
+  }
+
   .container {
     padding: 115px 52px;
   }
